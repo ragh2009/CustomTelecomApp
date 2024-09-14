@@ -7,6 +7,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.os.IBinder
+import android.telecom.InCallService
 import androidx.annotation.RequiresApi
 import androidx.core.content.PermissionChecker
 import com.telecom.app.data.model.TelecomCallData
@@ -25,7 +26,7 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 
 @RequiresApi(Build.VERSION_CODES.O)
-class TelecomCallService : Service() {
+class TelecomCallService : InCallService() {
     companion object {
         internal const val EXTRA_NAME: String = "extra_name"
         internal const val EXTRA_URI: String = "extra_uri"

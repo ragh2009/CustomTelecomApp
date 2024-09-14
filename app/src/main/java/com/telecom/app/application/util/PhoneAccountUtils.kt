@@ -21,7 +21,7 @@ object PhoneAccountUtils {
             .setCapabilities(PhoneAccount.CAPABILITY_CALL_PROVIDER)
             .setIcon(Icon.createWithResource(context, R.drawable.ic_round_call_24))
             .setHighlightColor(context.getColor(R.color.black))
-            .setShortDescription("Custom Call Service")
+            .setShortDescription("Call Service")
             .build()
 
         telecomManager.registerPhoneAccount(phoneAccount)
